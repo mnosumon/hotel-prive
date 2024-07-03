@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-primary: #BF885E;
+  --color-primary-darker: #A6734B;
+  --color-primary-lighter: #D9945F;
+  --color-primary-50: #DFC7B5;
+  --color-primary-25: #EFE4DC;
+  --color-primary-10: #F5F0EB;
+  --color-primary-5: #FAF5F2;
+  --color-neutral: #21160E;
+  --color-neutral-80: #473D35;
+  --color-neutral-60: #7A6F68;
+  --color-neutral-40: #A69D97;
+  --color-neutral-20: #D4CFCD;
+  --color-neutral-15: #E3E1E0;
+  --color-neutral-10: #F0EFEE;
+  --color-neutral-5: #F7F6F6;
+  --color-neutral-0: #fff;
+  --color-secondary: #664831;
+  --color-secondary-80: #856A54;
+  --color-secondary-60: #A38C7A;
+  --color-secondary-40: #C2B0A3;
+  --color-secondary-20: #E5DCD5;
+  --color-secondary-10: #F2EEEB;
+  --color-secondary-5: #FAF9F7;
+}
