@@ -1,10 +1,11 @@
 import React from 'react'
+import Banner from './componets/home/banner/Banner'
 
 const App = () => {
   return (
-    <div className='bg-red-500 text-inherit '>
-      <h1 className='text-3xl font-roboto text-color-primary'>hello</h1>
-    </div>
+  <>
+      <Banner/>
+  </>
   )
 }
 
