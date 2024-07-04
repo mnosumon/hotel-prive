@@ -5,7 +5,7 @@ import Navbar from '../../navbar/Navbar'
 const Banner = () => {
   return (
     <>
-        <div className='font-roboto' style={{ backgroundImage: `url(${BannerBG})` }}>
+        <div className='font-roboto bg-cover' style={{ backgroundImage: `url(${BannerBG})` }}>
             <Navbar/>
         </div>
     </>
