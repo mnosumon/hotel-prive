@@ -1,32 +1,25 @@
 import React from 'react'
-import { FaArrowUp, FaArrowDown } from 'react-icons/fa';
+import { FaAngleDown, FaAngleUp } from "react-icons/fa6";
 
 const RoomQuantity = ({ conent, quantity, setQuantity }) => {
   return (
     <div className="mb-4 w-1/2">
-    <label className=" block text-gray-700 text-sm font-bold mb-2">{conent}</label>
-    <div className="flex items-center">
-      <button
-        type="button"
-        onClick={() => setQuantity(quantity - 1)}
-        disabled={quantity <= 0}
-        className="px-2 py-1 bg-gray-300 text-gray-800 rounded-l"
-      >
-        <FaArrowDown />
-      </button>
+    <label className="block text-color-neutral-20 uppercase tracking-[1.2px] text-sm font-normal mb-2">{conent}</label>
+    <div className="flex items-center justify-between">
       <input
         type="text"
         readOnly
         value={quantity}
         className="w-12 text-center border-t border-b border-gray-300"
       />
-      <button
-        type="button"
-        onClick={() => setQuantity(quantity + 1)}
-        className="px-2 py-1 bg-gray-300 text-gray-800 rounded-r"
-      >
-        <FaArrowUp />
+      <div className="flex flex-col">
+        <button type='button' onClick={() => setQuantity(quantity + 1)} disabled={quantity < 0}>
+        <FaAngleUp className='text-color-neutral-0 text-xl' />
+        </button>
+        <button type='button' onClick={() => setQuantity(quantity - 1)} disabled={quantity <= 0}>
+        <FaAngleDown className='text-color-neutral-0 text-xl' />
       </button>
+      </div>
     </div>
   </div>
   )

@@ -22,7 +22,7 @@ const RoomBook = () => {
             <CatchData conent="Departure Date" date={departureDate} setDate={setDepartureDate} />
           </div>
           <div className="flex justify-between gap-8">
-            <div className="flex w-1/2">
+            <div className="flex w-1/2 gap-4 md:gap-8">
               <RoomQuantity conent="Adults" quantity={adults} setQuantity={setAdults} />
               <RoomQuantity conent="Children" quantity={children} setQuantity={setChildren} />
             </div>
