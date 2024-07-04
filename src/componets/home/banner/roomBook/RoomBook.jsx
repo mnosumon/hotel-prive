@@ -18,8 +18,8 @@ const RoomBook = () => {
       <div className="container">
         <form onSubmit={handleSubmit} className=" shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="md:flex justify-between gap-8">
-            <CatchData conent="Arrival Date" date={arrivalDate} setDate={setArrivalDate} />
-            <CatchData conent="Departure Date" date={departureDate} setDate={setDepartureDate} />
+            <CatchData content="Arrival Date" day="15" month="April, 2024" weklyDay="Friday" />
+            <CatchData content="Departure Date" day="27" month="April, 2024" weklyDay="monday" />
           </div>
           <div className="flex justify-between gap-8">
             <div className="flex w-1/2 gap-4 md:gap-8">
