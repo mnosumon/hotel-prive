@@ -32,7 +32,7 @@ export default {
       },
       fontFamily: {
         'roboto': ["Roboto", 'sans-serif'],
-        'ga': ["Ga Maamli", 'sans-serif'],
+        'DE_Grund': ["Playwrite DE Grund", 'cursive'],
         // gilroyLight: ["GilroyLight"],
         // gilroyRegular: ["GilroyRegular"],
       }
