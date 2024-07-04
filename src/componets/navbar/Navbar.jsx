@@ -20,11 +20,11 @@ const Navbar = () => {
                 <Image className="max-w-full bg-transparent" sourc={HeaderMiddle} alt="HeaderMiddle Image" />
             </div>
             <div className="w-full md:w-auto flex md:gap-3 justify-between">
-                <div className="text-sm text-color-neutral-0 leading-4 flex items-center gap-3">
+                <div className="text-sm text-color-neutral-0 font-bold leading-4 flex items-center gap-3">
                     <IoMdCall />
                     <span>+1 800 603 6035</span>
                 </div>
-                <a className='uppercase bg-color-primary text-color-neutral-0 inline-block text-sm py-4 px-6' href="#">book now</a>
+                <a className='uppercase bg-color-primary text-color-neutral-0 inline-block text-sm py-4 px-6 text-center whitespace-nowrap hover:bg-color-primary-lighter transition-all duration-500' href="#">book now</a>
             </div>
         </header>
     </>
