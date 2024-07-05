@@ -13,25 +13,29 @@ const Calendar = () => {
   ];
 
   return (
-    <div className="p-4 max-w-md mx-auto bg-white shadow-lg rounded-lg">
-      <div className="flex justify-between items-center mb-2">
-        <button>
-        <AiOutlineLeft size={24} />
-        </button>
-        <div className="text-xl font-semibold">{month}</div>
-        <button>
-          <AiOutlineRight size={24} />
-        </button>
+    <div className="bg-white">
+      <div className="flex justify-between items-center bg-color-secondary-80 w-full text-color-neutral-0 font-kanit">
+        <a href="#" className='w-[56px] h-full flex justify-center items-center'>
+          <AiOutlineLeft className='text-2xl' />
+        </a>
+        <div className="text-xl leading-[56px]">{month}</div>
+        <a href="#" className='w-[56px] h-full flex justify-center items-center'>
+          <AiOutlineRight className='text-2xl' />
+        </a>
       </div>
-      <div className="grid grid-cols-7 gap-1 text-sm">
-        {daysOfWeek.map((day) => (
-          <div key={day} className="p-2 text-center font-semibold">{day}</div>
-        ))}
-        {daysInMonth.flat().map((day, index) => (
-          <div className='p-2 text-center'>
-            {day}
-          </div>
-        ))}
+      <div className="">
+        <div className="bg-color-secondary-60 grid grid-cols-7 gap-1 text-sm">
+          {daysOfWeek.map((day) => (
+            <div key={day} className="p-1 text-center text-color-neutral-0 uppercase font-roboto leading-8">{day}</div>
+          ))}
+        </div>
+        <div className="grid grid-cols-7 gap-1 text-sm">
+          {daysInMonth.flat().map((day, index) => (
+            <div className='p-1 text-center border-r-[1px] leading-10 font-roboto'>
+              {day}
+            </div>
+          ))}
+        </div>
       </div>
       {/* <div
             key={index}

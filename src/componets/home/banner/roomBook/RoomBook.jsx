@@ -1,12 +1,26 @@
 import React, { useState } from 'react';
 import CatchData from './CatchData';
 import RoomQuantity from './RoomQuantity';
+import Calendar from './Calendar';
+
 
 const RoomBook = () => {
   const [arrivalDate, setArrivalDate] = useState('');
   const [departureDate, setDepartureDate] = useState('');
   const [adults, setAdults] = useState(1);
   const [children, setChildren] = useState(0);
+  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+  const [calendarType, setCalendarType] = useState(null);
+
+
+  const handleCalendar = (type) => {
+    if (calendarType === type) {
+      setIsCalendarOpen(!isCalendarOpen);
+    } else {
+      setCalendarType(type);
+      setIsCalendarOpen(true);
+    }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -18,9 +32,13 @@ const RoomBook = () => {
       <div className="container">
         <form onSubmit={handleSubmit} className=" shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="md:flex justify-between gap-8">
-            <CatchData content="Arrival Date" day="15" month="April, 2024" weklyDay="Friday" />
-            <CatchData content="Departure Date" day="27" month="April, 2024" weklyDay="monday" />
+            <CatchData openCalendar={() => handleCalendar('arrival')}
+              isCalendarOpen={isCalendarOpen && calendarType === 'arrival'} content="Arrival Date" day="15" month="April, 2024" weklyDay="Friday" />
+            <CatchData openCalendar={() => handleCalendar('departure')}
+              isCalendarOpen={isCalendarOpen && calendarType === 'departure'} content="Departure Date" day="27" month="April, 2024" weklyDay="monday" />
           </div>
+          {isCalendarOpen && <Calendar />}
+
           <div className="flex justify-between gap-8">
             <div className="flex w-1/2 gap-4 md:gap-8">
               <RoomQuantity conent="Adults" quantity={adults} setQuantity={setAdults} />
