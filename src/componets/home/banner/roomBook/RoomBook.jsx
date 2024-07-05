@@ -20,6 +20,7 @@ const RoomBook = () => {
       setCalendarType(type);
       setIsCalendarOpen(true);
     }
+    console.log(isCalendarOpen);
   };
 
   const handleSubmit = (e) => {
@@ -32,12 +33,19 @@ const RoomBook = () => {
       <div className="container">
         <form onSubmit={handleSubmit} className=" shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="md:flex justify-between gap-8">
-            <CatchData openCalendar={() => handleCalendar('arrival')}
+            <div className="flex flex-col w-full">
+              <CatchData openCalendar={() => handleCalendar('arrival')}
               isCalendarOpen={isCalendarOpen && calendarType === 'arrival'} content="Arrival Date" day="15" month="April, 2024" weklyDay="Friday" />
-            <CatchData openCalendar={() => handleCalendar('departure')}
+              {isCalendarOpen && <Calendar />}
+            </div>
+            <div className="flex flex-col w-full">
+              <CatchData openCalendar={() => handleCalendar('departure')}
               isCalendarOpen={isCalendarOpen && calendarType === 'departure'} content="Departure Date" day="27" month="April, 2024" weklyDay="monday" />
+              {isCalendarOpen && <Calendar />}
+            </div>
+
           </div>
-          {isCalendarOpen && <Calendar />}
+          
 
           <div className="flex justify-between gap-8">
             <div className="flex w-1/2 gap-4 md:gap-8">
