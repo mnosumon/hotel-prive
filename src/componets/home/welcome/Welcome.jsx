@@ -8,13 +8,13 @@ import Heading3 from '../../utilities/Heading3';
 const Welcome = () => {
   return (
     <div className="container">
-        <article className="relative p-4">
-            <div className="w-full max-w-[55rem] absolute left-full -translate-x-full">
+        <article className="lg:relative mt-20">
+            <div className="w-full max-w-[55rem] lg:absolute left-full lg:-translate-x-full">
                 <a href="#">
                     <img src={hotelImage} alt="Luxury Hotel" className="inline-block max-w-full" />
                 </a>
             </div>
-            <div className="absolute left-0 top-full transform p-[7.5rem] max-w-[45.5rem] w-full z-10 bg-color-neutral-0 mt-4">
+            <div className="lg:absolute left-0 top-12 mt-8 md:mt-0 p-5 md:p-[7.5rem] max-w-[45.5rem] w-full z-10 bg-color-neutral-0">
                 <SubHeading content="welcome" className="text-color-neutral-60" ><BeforeIcon color="#7A6F68" /></SubHeading>
                 <Heading content="Luxury Hotel" className="!text-color-neutral !text-left mt-8 mb-6"/>
                 <Heading3 content="Near The Montmartre, Paris" />
