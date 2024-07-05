@@ -29,7 +29,7 @@ const RoomBook = () => {
   };
 
   return (
-    <div className="bg-[#21160E]/50">
+    <div className="bg-[#21160E]/50 mt-10 md:mt-20">
       <div className="container">
         <form onSubmit={handleSubmit} className=" shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="md:flex justify-between gap-8">

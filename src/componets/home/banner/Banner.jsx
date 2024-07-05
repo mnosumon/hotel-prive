@@ -11,7 +11,6 @@ const Banner = () => {
     header:{ 
     background: 'rgba(71, 61, 53, 1)',
     backgroundImage:`url(${BannerBG})`,
-    height: '105vh', 
     backgroundPosition:'center', 
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover' 
