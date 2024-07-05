@@ -33,6 +33,7 @@ export default {
       fontFamily: {
         'roboto': ["Roboto", 'sans-serif'],
         'kanit': ["Kanit", 'sans-serif'],
+        'fahkwang': ["Fahkwang", 'sans-serif'],
         'DE_Grund': ["Playwrite DE Grund", 'cursive'],
         // gilroyLight: ["GilroyLight"],
         // gilroyRegular: ["GilroyRegular"],
