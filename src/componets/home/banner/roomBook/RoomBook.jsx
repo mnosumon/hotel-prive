@@ -47,15 +47,13 @@ const RoomBook = () => {
           </div>
           
 
-          <div className="flex justify-between gap-8">
-            <div className="flex w-1/2 gap-4 md:gap-8">
+          <div className="md:flex justify-between gap-8">
+            <div className="flex w-full md:w-1/2 gap-4 md:gap-8">
               <RoomQuantity conent="Adults" quantity={adults} setQuantity={setAdults} />
               <RoomQuantity conent="Children" quantity={children} setQuantity={setChildren} />
             </div>
-            <div className="flex items-center justify-between w-1/2 ">
-              <button
-                type="submit"
-                className="bg-color-primary hover:bg-color-primary-lighter transition-all duration-500 text-color-neutral-0 py-4 tracking-[1.2px] uppercase text-lg leading-8 w-full"
+            <div className="flex items-center justify-between w-full md:w-1/2 ">
+              <button className="bg-color-primary hover:bg-color-primary-lighter transition-all duration-500 text-color-neutral-0 py-4 tracking-[1.2px] uppercase text-lg leading-8 w-full"
               >
                 Check Availability
               </button>
