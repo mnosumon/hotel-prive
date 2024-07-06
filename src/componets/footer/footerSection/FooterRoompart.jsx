@@ -6,7 +6,7 @@ import Ancor from '../../utilities/Ancor'
 
 const FooterRoompart = () => {
   return (
-    <div className="w-[16%]">
+    <div className="">
         <Heading2 content="Rooms & Suits" />
         <ul className='mt-5 flex flex-col gap-3'>
             <ListItem>

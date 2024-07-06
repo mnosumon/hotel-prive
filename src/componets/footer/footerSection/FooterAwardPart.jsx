@@ -6,9 +6,9 @@ import Heading2 from '../../utilities/Heading2'
 
 const FooterAwardPart = () => {
   return (
-    <div className="w-[26%]">
-        <Heading2 content="menu" />
-        <div className="flex gap-5 items-center justify-between mt-5">
+    <div className="">
+        <Heading2 content="Our Awards" />
+        <div className="flex gap-5 items-center mt-5">
             <picture className='w-20 h-auto'>
                 <img className='w-full h-full object-cover' src={AwardsIMG1} alt="AwardsIMG3 logo" />
             </picture>

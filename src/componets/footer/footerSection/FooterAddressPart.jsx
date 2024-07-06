@@ -5,7 +5,7 @@ import Peragrap2 from '../../utilities/Peragrap2'
 
 const FooterAddressPart = () => {
   return (
-    <div className="w-[26%] flex flex-col gap-3">
+    <div className="flex flex-col gap-3">
         <picture className='mb-4'>
             <img src={FooterLogo} alt="Footer logo" />
         </picture>

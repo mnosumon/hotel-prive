@@ -6,7 +6,7 @@ import ListItem from '../../utilities/ListItem'
 
 const FooterMenuPart = () => {
   return (
-    <div className="w-[16%]">
+    <div className="">
         <Heading2 content="menu" />
         <ul className='mt-5 flex flex-col gap-3'>
             <ListItem>
