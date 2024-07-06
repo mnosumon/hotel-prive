@@ -24,8 +24,8 @@ const Facilities = () => {
                         <Peragrap2 className="!text-color-neutral-0 font-bold" content="Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
                         <Paeragrap1 className="!text-color-neutral-0" content="Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus." />
                         <div className="flex gap-8 items-center mt-10">
-                            <Ancor className="text-color-primary" href="#" content="Explore more" />
-                            <RightArrow/>
+                            <Ancor className="text-color-primary !font-semibold !text-lg !tracking-[1.5px]" href="#" content="Explore more" />
+                            <RightArrow className="!w-12" />
                         </div>
                         <Heading3 className="!text-color-neutral-0 mt-6" content="Near The Montmartre, Paris Sed laoreet aliquam le" />
                     </div>

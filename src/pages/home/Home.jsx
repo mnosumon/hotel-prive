@@ -5,6 +5,7 @@ import Accommodation from '../../componets/home/accommodation/Accommodation'
 import Facilities from '../../componets/home/facilities/Facilities'
 import Join from '../../componets/home/join/Join'
 import HotelPrive from '../../componets/home/hpotelPrive/HotelPrive'
+import Footer from '../../componets/footer/Footer'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         <Facilities/>
         <Join/>
         <HotelPrive/>
+        <Footer/>
     </>
   )
 }
