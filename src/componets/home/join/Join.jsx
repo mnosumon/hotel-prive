@@ -32,7 +32,7 @@ const Join = () => {
             <input className='bg-transparent outline-none text-color-neutral-0 placeholder:text-color-neutral-0 font-fahkwang text-lg leading-10 capitalize' placeholder='Enter email address' type="text" />
           </div>
           <div className="flex items-center justify-between w-full md:w-[40%]">
-            <button className="bg-color-primary hover:bg-color-primary-lighter transition-all duration-500 text-color-neutral-0 py-4 tracking-[1.2px] uppercase text-lg leading-8 w-full">Check Availability</button>
+            <button className="bg-color-primary hover:bg-color-primary-lighter transition-all duration-500 text-color-neutral-0 py-4 tracking-[1.2px] uppercase text-lg leading-8 w-full">subscribe</button>
           </div>
         </div>
       </div>

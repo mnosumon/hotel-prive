@@ -7,6 +7,7 @@ import Peragrap2 from '../../utilities/Peragrap2'
 import Paeragrap1 from '../../utilities/Paeragrap1'
 import Ancor from '../../utilities/Ancor'
 import RightArrow from '../../utilities/RightArrow'
+import Heading3 from '../../utilities/Heading3'
 
 const Facilities = () => {
   return (
@@ -19,13 +20,14 @@ const Facilities = () => {
                     </picture>
                     <div className="md:absolute w-full md:w-[60%] bg-color-secondary md:right-0 md:top-1/2 md:-translate-y-1/2 md:p-20">
                         <SubHeading content="FACILITIES AND SERVICES" className="text-color-secondary-40" ><BeforeIcon color="#C2B0A3" /></SubHeading>
-                        <Heading content="Luxury Hotel" className="!text-color-neutral-0 !text-left mt-8 mb-6"/>
+                        <Heading content="Wellness & Spa" className="!text-color-neutral-0 !text-left mt-8 mb-6"/>
                         <Peragrap2 className="!text-color-neutral-0 font-bold" content="Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
                         <Paeragrap1 className="!text-color-neutral-0" content="Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis. Integer rutrum ante eu lacus." />
                         <div className="flex gap-8 items-center mt-10">
                             <Ancor className="text-color-primary" href="#" content="Explore more" />
                             <RightArrow/>
                         </div>
+                        <Heading3 className="!text-color-neutral-0 mt-6" content="Near The Montmartre, Paris Sed laoreet aliquam le" />
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import Welcome from '../../componets/home/welcome/Welcome'
 import Accommodation from '../../componets/home/accommodation/Accommodation'
 import Facilities from '../../componets/home/facilities/Facilities'
 import Join from '../../componets/home/join/Join'
+import HotelPrive from '../../componets/home/hpotelPrive/HotelPrive'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Accommodation/>
         <Facilities/>
         <Join/>
+        <HotelPrive/>
     </>
   )
 }
