@@ -14,11 +14,11 @@ const Facilities = () => {
     <>  
         <div className="bg-color-secondary">
             <div className="py-28 container">
-                <div className="md:relative h-[900px] w-full">
-                    <picture className="md:absolute h-full w-[70%] bg-slate-500 left-0 top-0">
+                <div className="md:relative md:h-[900px] w-full flex flex-col gap-16">
+                    <picture className="md:absolute h-full w-full md:w-[70%] bg-slate-500 md:left-0 md:top-0">
                         <img className='h-full w-full object-cover' src={FacilitiesIMG} alt="Facilities Image" />
                     </picture>
-                    <div className="md:absolute w-[60%] bg-color-secondary right-0 top-1/2 -translate-y-1/2 p-20">
+                    <div className="md:absolute w-full md:w-[60%] bg-color-secondary md:right-0 md:top-1/2 md:-translate-y-1/2 md:p-20">
                         <SubHeading content="FACILITIES AND SERVICES" className="text-color-secondary-40" ><BeforeIcon color="#C2B0A3" /></SubHeading>
                         <Heading content="Luxury Hotel" className="!text-color-neutral-0 !text-left mt-8 mb-6"/>
                         <Peragrap2 className="!text-color-neutral-0 font-bold" content="Aliquam erat volutpat. Duis ac turpis. Donec sit amet eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit." />
