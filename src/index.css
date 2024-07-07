@@ -25,7 +25,9 @@
 }
 
 
-
+.carousel.carousel-slider .control-arrow {
+  background-color: #823d03;
+}
 :root {
   --color-primary: #BF885E;
   --color-primary-darker: #A6734B;

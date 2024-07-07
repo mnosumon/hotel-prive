@@ -5,7 +5,7 @@ import Accommodation from '../../componets/home/accommodation/Accommodation'
 import Facilities from '../../componets/home/facilities/Facilities'
 import Join from '../../componets/home/join/Join'
 import HotelPrive from '../../componets/home/hpotelPrive/HotelPrive'
-import Footer from '../../componets/footer/Footer'
+import SuperiorSlider from '../../componets/home/superiorSlider/SuperiorSlider'
 
 const Home = () => {
   return (
@@ -13,10 +13,10 @@ const Home = () => {
         <Banner/>
         <Welcome/>
         <Accommodation/>
+        <SuperiorSlider/>
         <Facilities/>
         <Join/>
         <HotelPrive/>
-        <Footer/>
     </>
   )
 }

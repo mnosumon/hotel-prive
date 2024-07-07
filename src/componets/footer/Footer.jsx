@@ -11,7 +11,7 @@ const Footer = () => {
     <>  
     <div className="bg-color-neutral-80">
       <div className="container py-16 md:py-24 lg:py-32">
-        <div className="flex flex-wrap gap-y-10 -mx-4">
+        <div className="flex flex-wrap gap-y-10 -mx-0">
           <div className="w-full md:w-1/2 lg:w-1/4 px-4">
             <FooterAddressPart />
           </div>
