@@ -34,28 +34,6 @@ const SamplePrevArrow = (props) => {
   };
   
 
-// function SampleNextArrow({ className, style, onClick }) {
-//     return (
-//         <div
-//             className={`${className} rounded-full p-2 transform -translate-y-1/2 top-1/2 right-0 hover:bg-color-primary`}
-//             style={{ ...style, display: "flex", justifyContent: "center", alignItems: "center", zIndex: 50 }}
-//             onClick={onClick}
-//         >
-//         </div>
-//     );
-// }
-
-// function SamplePrevArrow({ className, style, onClick }) {
-//     return (
-//         <div
-//             className={`${className} rounded-full p-2 transform -translate-y-1/2 top-1/2 left-0 hover:bg-color-primary`}
-//             style={{ ...style, display: "flex", justifyContent: "center", alignItems: "center", zIndex: 50 }}
-//             onClick={onClick}
-//         >
-//         </div>
-//     );
-// }
-
 const SpecialOffer = () => {
     const settings = {
         dots: false,
