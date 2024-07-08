@@ -26,8 +26,8 @@ const Navbar = () => {
     }, []);
   return (
     <>  
-      <nav id="navbar" className="w-full z-[99999] fixed transition-all duration-700 py-5">
-        <header className="flex flex-wrap md:flex-nowrap items-center justify-between gap-y-4 md:gap-y-0 px-1">
+      <nav id="navbar" className="w-full px-2 z-[99999] fixed transition-all duration-700 py-5">
+        <header className="flex flex-wrap md:flex-nowrap items-center justify-between gap-y-4 md:gap-y-0">
             <div className="flex gap-8 items-center w-1/2 md:w-auto">
                 <FaBarsStaggered className='text-color-neutral-0' />
                 <div className="flex items-center gap-3 cursor-pointer text-color-neutral-0 text-sm">

@@ -11,7 +11,7 @@ const SamplePrevArrow = (props) => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={`slick-prev left-[2%] rounded-full p-2 transform -translate-y-1/2 top-1/2  flex justify-center items-center z-50 ${className}`}
+        className={`slick-prev left-[-2%] sm:left-[-0.5%]  md:left-[1%] rounded-full p-2 transform -translate-y-1/2 top-1/2  flex justify-center items-center z-50 ${className}`}
         style={{ ...style }}
         onClick={onClick}
       >
@@ -24,7 +24,7 @@ const SamplePrevArrow = (props) => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={`slick-next rounded-full p-2 transform -translate-y-1/2 top-1/2 right-[5%] flex justify-center items-center z-50 ${className}`}
+        className={`slick-next rounded-full p-2 transform -translate-y-1/2 top-1/2 right-[4%] sm:right-[3%] flex justify-center items-center z-50 ${className}`}
         style={{ ...style }}
         onClick={onClick}
       >

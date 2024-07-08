@@ -12,7 +12,7 @@ import HotelPriveIMG5 from '../../../assets/hotelPriveImg/hotelPrivIMG5.jpg'
 const HotelPrive = () => {
   return (
     <>
-        <div className="py-32 container">
+        <div className="py-32 px-2 container">
             <div className="flex justify-center">
                 <SubHeading className="text-color-neutral-80" content="#hotelprive">
                     <BeforeIcon color="#7A6F68" />

@@ -25,7 +25,7 @@ const Join = () => {
           </SubHeading>
         </div>
         <Heading className="py-12" content="Newsletter Sign Up" />
-        <div className="md:flex w-full md:w-[80%] lg:w-[60%] gap-8 mx-auto">
+        <div className="md:flex w-full md:w-[80%] lg:w-[60%] gap-8 px-2 mx-auto">
           <div className="mb-4 border-b-2 border-color-neutral-0 w-full md:w-[60%]">
             <label className="block text-color-neutral-20 uppercase tracking-[1.2px] text-sm font-normal mb-5">SIGN UP FOR NEWS AND SPECIAL OFFERS
             </label>
