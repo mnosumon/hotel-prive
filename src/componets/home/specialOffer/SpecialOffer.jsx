@@ -2,38 +2,63 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import SpecalSlider1 from '../../../assets/image/specalSlider1.jpg';
 import SpecalSlider2 from '../../../assets/image/specalSlider2.jpg';
 import SpecalSlider3 from '../../../assets/image/specalSlider3.jpg';
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
 
-function SampleNextArrow({ className, style, onClick }) {
+const SamplePrevArrow = (props) => {
+    const { className, style, onClick } = props;
     return (
-        <div
-            className={`${className} rounded-full p-2 transform -translate-y-1/2 top-1/2 right-0 hover:bg-color-primary`}
-            style={{ ...style, display: "flex", justifyContent: "center", alignItems: "center", zIndex: 50 }}
-            onClick={onClick}
-        >
-            <FaArrowRight className="text-black" />
-        </div>
+      <div
+        className={`slick-prev left-[2%] rounded-full p-2 transform -translate-y-1/2 top-1/2  flex justify-center items-center z-50 ${className}`}
+        style={{ ...style }}
+        onClick={onClick}
+      >
+        <FaAngleLeft className='text-2xl text-black' />
+      </div>
     );
-}
+  };
+  
+  const SampleNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`slick-next rounded-full p-2 transform -translate-y-1/2 top-1/2 right-[5%] flex justify-center items-center z-50 ${className}`}
+        style={{ ...style }}
+        onClick={onClick}
+      >
+        <FaAngleRight className='text-2xl text-black' />
+      </div>
+    );
+  };
+  
 
-function SamplePrevArrow({ className, style, onClick }) {
-    return (
-        <div
-            className={`${className} rounded-full p-2 transform -translate-y-1/2 top-1/2 left-0 hover:bg-color-primary`}
-            style={{ ...style, display: "flex", justifyContent: "center", alignItems: "center", zIndex: 50 }}
-            onClick={onClick}
-        >
-            <FaArrowLeft className="text-black" />
-        </div>
-    );
-}
+// function SampleNextArrow({ className, style, onClick }) {
+//     return (
+//         <div
+//             className={`${className} rounded-full p-2 transform -translate-y-1/2 top-1/2 right-0 hover:bg-color-primary`}
+//             style={{ ...style, display: "flex", justifyContent: "center", alignItems: "center", zIndex: 50 }}
+//             onClick={onClick}
+//         >
+//         </div>
+//     );
+// }
+
+// function SamplePrevArrow({ className, style, onClick }) {
+//     return (
+//         <div
+//             className={`${className} rounded-full p-2 transform -translate-y-1/2 top-1/2 left-0 hover:bg-color-primary`}
+//             style={{ ...style, display: "flex", justifyContent: "center", alignItems: "center", zIndex: 50 }}
+//             onClick={onClick}
+//         >
+//         </div>
+//     );
+// }
 
 const SpecialOffer = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
