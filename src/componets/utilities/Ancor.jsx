@@ -3,27 +3,39 @@ import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 const Ancor = ({ content, className, href }) => {
+  const variants = {
+    hover: {
+      scale: 1.1,
+      rotateY: 15,
+      transition: {
+        duration: 0.3,
+      },
+    },
+    tap: {
+      scale: 0.9,
+      rotateY: -15,
+      transition: {
+        duration: 0.2,
+      },
+    },
+  };
+
   return (
-    <a
+    <motion.a
       href={href}
       className={`text-base text-color-primary font-roboto leading-[26px] font-normal ${className}`}
-      // whileHover={{ scale: 1, rotate: 360 }}
-      // transition={{ duration: 1, ease: 'easeInOut' }}
+      variants={variants}
+      whileHover="hover"
+      whileTap="tap"
     >
       {content}
-    </a>
+    </motion.a>
   );
 };
-
-// Ancor.propTypes = {
-//   content: PropTypes.string.isRequired,
-//   className: PropTypes.string,
-//   href: PropTypes.string,
-// };
-
-// Ancor.defaultProps = {
-//   className: '',
-//   href: '#',
-// };
+Ancor.propTypes = {
+  content: PropTypes.string.isRequired,
+  className: PropTypes.string,
+  href: PropTypes.string.isRequired,
+};
 
 export default Ancor;

@@ -3,7 +3,6 @@ import SubHeading from '../../utilities/SubHeading';
 import { BeforeIcon } from '../../utilities/svgImage/Before-icon';
 import JionBgImg from '../../../assets/bg-image/joinImg.svg'
 import Heading from '../../utilities/Heading';
-import CatchData from '../banner/roomBook/CatchData';
 
 const Join = () => {
   const styles={ 

@@ -26,7 +26,7 @@ const Facilities = () => {
                         <div className="flex gap-8 items-center mt-10">
                             <Ancor className="text-color-primary !font-semibold !text-lg !tracking-[1.5px]" href="#" content="Explore more" />
                             <RightArrow className="!w-12" />
-                        </div>
+                        </div>       
                         <Heading3 className="!text-color-neutral-0 mt-6" content="Near The Montmartre, Paris Sed laoreet aliquam le" />
                     </div>
                 </div>

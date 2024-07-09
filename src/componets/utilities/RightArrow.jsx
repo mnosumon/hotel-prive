@@ -1,9 +1,31 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const RightArrow = ({className}) => {
+const RightArrow = ({ className }) => {
   return (
-    <div className={`relative h-[2px] w-8 bg-color-primary after:content-[''] after:absolute after:w-0 after:h-0 after:border-b-[4px] after:border-t-[4px] after:border-l-[12px] after:border-solid after:border-y-transparent after:border-l-color-primary after:top-1/2 after:left-full after:-translate-y-1/2 ${className}`}></div>
-  )
-}
+    <motion.div
+      className={`relative h-[2px] w-8 bg-color-primary ${className}`}
+      whileHover={{ rotateY: 360 }}
+      transition={{ duration: 1 }}
+    >
+      <div
+        className="
+          absolute 
+          w-0 
+          h-0 
+          border-b-[4px] 
+          border-t-[4px] 
+          border-l-[12px] 
+          border-solid 
+          border-y-transparent 
+          border-l-color-primary 
+          top-1/2 
+          left-full 
+          -translate-y-1/2
+        "
+      />
+    </motion.div>
+  );
+};
 
-export default RightArrow
+export default RightArrow;
